@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+    --ff-body: "Heebo", sans-serif;
+    --ff-heading: "Oswald", sans-serif;
+    --ff-lato: "Lato", sans-serif;
+
+    --fs-xl: clamp(1rem, 2vw + 1rem, 2.5rem);
+    --fs-xll: clamp(1rem, 1.2vw + 1rem, 2rem);
+    --fs-ll: clamp(1rem, 1vw + 1rem, 1.3rem);
+    --fs-s: clamp(0.5rem, 0.8vw + 1rem, 0.9rem);
+
+    --fs-xl-hero: clamp(2rem, 1.5vw + 1rem, 3rem);
+    --fs-ll-hero: clamp(1rem, 0.5vw + 1rem, 1.3rem);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F4F4F4;
+    color: rgb(24, 24, 24);
+}

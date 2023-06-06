@@ -1,0 +1,31 @@
+.project-container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.project-title{
+    max-width: 1200px;
+    margin: 2em 10em;
+    font-size: var(--fs-xll);
+    font-family: var(--ff-lato);
+}
+.project-divider{
+    margin: 0 auto;
+    margin-bottom: 8em;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.description-part{
+    width: 100%;
+    /* a toucher plus tard - zone pour creer scroll bar*/
+}
+/* card active
+project-title-name
+reducer
+tags
+tag-card
+project-description
+link-site */
