@@ -4,7 +4,7 @@ import '../img/noise.png';
 import MoiNoBg from '../img/Moi-no-bg.png'
 
 const TechPres = () => {
-  const [activeTab, setActiveTab] = useState('presentation');
+  const [activeTab, setActiveTab] = useState('technology');
 
   const handleTabChange = (tab) => {
     setActiveTab(tab);
