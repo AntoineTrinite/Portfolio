@@ -10,7 +10,6 @@
     background: rgb(54, 54, 54);
     background-image: url(../img/noise.png);
 }
-
 .title-tech-pres{
     border-bottom: 1px solid #F4F4F4;
     font-size: var(--fs-xll);
@@ -61,6 +60,7 @@
     width: 250px;
     height: 150px;
     padding: 1em;
+    
 }
 .tech-card-description {
     display: none;
@@ -169,6 +169,7 @@
 .button-download:hover{
     color: rgb(54, 54, 54);
     background-color: #F4F4F4;
+    border: 1px solid rgb(54, 54, 54);
     border-radius: 0 0 3px 3px;
 }
 .button-download:active{
@@ -191,7 +192,6 @@
     height: 100%;
     z-index: -1;
 }
-
 
 @media (max-width: 1230px){
     .presentation{

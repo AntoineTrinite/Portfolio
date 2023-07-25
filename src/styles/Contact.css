@@ -27,6 +27,14 @@
     font-size: var(--fs-xll);
     font-family: var(--ff-lato);
 }
+.confirmation-message{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 .contact-form-part {
     display: flex;
     flex-direction: column;
@@ -42,7 +50,10 @@
     height: 30px;
     padding: 0.5em;
 }
-
+label{
+    font-size: var(--fs-ll);
+    font-family: var(--ff-heading);
+}
 #message {
     width: 600px;
     height: 300px;
@@ -54,6 +65,8 @@
     align-self: end;
 }
 #submit {
+    max-width: 150px;
+    cursor: pointer;
     background-color: #F4F4F4;
     color: #3C3C3C;
     padding: 0.4em 1.2em;
@@ -79,6 +92,12 @@
     border-radius: 3px;
     border: 1px solid black;
     box-shadow: 49px 23px 26px -4px rgba(0, 0, 0, 0.25);
+}
+.confirmation-message{
+    font-size: var(--fs-s);
+    font-family: var(--ff-lato);
+    color: green;
+    padding: 1rem 2rem;
 }
 
 @media(max-width: 1150px) {

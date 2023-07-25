@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/TechPres.css';
 import '../img/noise.png';
-import MoiNoBg from '../img/Moi-no-bg.png'
+import MoiSansBg from '../img/Moi-sans-bg.png'
 
 const TechPres = () => {
   const [activeTab, setActiveTab] = useState('technology');
@@ -9,6 +9,15 @@ const TechPres = () => {
   const handleTabChange = (tab) => {
     setActiveTab(tab);
   };
+  
+    const handleDownload = () => {
+      const pdfFilePath = 'src/files/CV2023.pdf';
+      
+      const downloadLink = document.createElement('a');
+      downloadLink.href = pdfFilePath;
+      downloadLink.download = 'cv_antoine_trinite.pdf'; 
+      downloadLink.click();
+    };
 
   return (
     <div className="tech-pres">
@@ -31,37 +40,37 @@ const TechPres = () => {
           <div className="tech-card noise">
             <span className="tech-card-title">Html/Css</span>
             <p className="tech-card-description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, eum?
+              9 Projets réalisés
             </p>
           </div>
           <div className="tech-card noise">
             <span className="tech-card-title">Javascript</span>
             <p className="tech-card-description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, eum?
+              3 Projets réalisés
             </p>
           </div>
           <div className="tech-card noise">
             <span className="tech-card-title">React</span>
             <p className="tech-card-description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, eum?
+              2 Projets réalisés<br/>1 projet en cours
             </p>
           </div>
           <div className="tech-card noise">
             <span className="tech-card-title">MongoDB</span>
             <p className="tech-card-description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, eum?
+              1 Projets réalisé
             </p>
           </div>
           <div className="tech-card noise">
             <span className="tech-card-title">NodeJs</span>
             <p className="tech-card-description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, eum?
+              1 Projets réalisé
             </p>
           </div>
           <div className="tech-card noise">
             <span className="tech-card-title">Figma</span>
             <p className="tech-card-description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, eum?
+              2 Projets réalisé<br/>2 projet en cours
             </p>
           </div>
         </div>
@@ -109,8 +118,8 @@ const TechPres = () => {
             </div>
           </div>
           <div className="cv-download-part">
-            <img className="img-download-part" src={MoiNoBg} alt="" />
-            <button className='button-download noise'>Télécharger mon CV</button>
+            <img className="img-download-part" src={MoiSansBg} alt="" />
+            <button className='button-download noise' onClick={handleDownload}>Télécharger mon CV</button>
           </div>
         </div>
       )}
